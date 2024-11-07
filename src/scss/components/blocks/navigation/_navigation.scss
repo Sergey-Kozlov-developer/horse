@@ -1,0 +1,36 @@
+@use "../../../tools/mixins/index" as mix;
+
+.menu {
+    &__body {
+        height: 100%;
+        @include mix.flex(space-between, center);
+
+        gap: 20px;
+
+        @include mix.smalltablet {
+            flex-direction: column;
+        }
+    }
+    &__item {
+        a {
+            color: #202020;
+            text-align: right;
+            font-family: Roboto;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+}
+.nav__phone {
+}

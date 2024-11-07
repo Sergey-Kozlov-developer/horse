@@ -1,0 +1,68 @@
+@use "../../../tools/mixins/index" as *;
+
+// .container {
+// }
+.home {
+    position: relative;
+    margin-top: 88px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+}
+.description {
+}
+.home__title {
+    width: 613px;
+    color: #000;
+    font-family: Philosopher;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 107%; /* 60.99px */
+
+    @include fontface("Philosopher", "Philosopher-Bold", 700, normal);
+}
+.home__description {
+    width: 590px;
+    padding-top: 40px;
+    color: #646464;
+    font-family: Philosopher;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    @include fontface("Philosopher", "Philosopher-Regular", 400, normal);
+}
+.btn__home {
+    margin-top: 40px;
+    width: 270px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #f2c642 0%, #e9d647 100%);
+    color: #6a5300;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 213.333% */
+    letter-spacing: 1.05px;
+    text-transform: uppercase;
+}
+// .home__image {
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+//     z-index: -58;
+// }
+// .horse {
+//     position: absolute;
+//     // right: 0;
+//     // bottom: 0;
+//     width: 576px;
+// }
+// .gull {
+//     position: absolute;
+//     width: 272px;
+// }

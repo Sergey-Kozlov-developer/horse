@@ -1,0 +1,81 @@
+@use "../../tools/functions" as f;
+@use "../../tools/mixins" as mix;
+@use "../../tools/vars" as vars;
+@use "../../tools/extends";
+@use "sass:math";
+
+html {
+    @extend %smoothscroll;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    @include mix.flex(null, null, column);
+    overflow-x: clip;
+
+    // Фикс для слайдеров
+    > * {
+        min-width: 0;
+    }
+}
+.img__bg {
+    position: absolute;
+    width: 100%;
+    height: 998px;
+    z-index: -60;
+}
+.img__sky {
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    bottom: 0;
+    // z-index: -60;
+}
+.img__horse {
+    position: absolute;
+    right: 280px;
+    bottom: 0;
+    width: 576px;
+    z-index: -58;
+}
+.img__gull {
+    position: absolute;
+    width: 272px;
+    right: 100px;
+    top: 180px;
+}
+
+@if (vars.$responsiveType) {
+    // Отзывчивая верстка без брейк-поинтов
+    .container,
+    [class*="__container"] {
+        @if (vars.$container>0) {
+            box-sizing: content-box;
+            max-width: f.rem(vars.$container);
+            margin: 0 auto;
+        }
+        @if (vars.$containerPadding>0) {
+            width: calc(100% - #{vars.$containerPadding}px);
+            padding: 0 f.rem(math.div(vars.$containerPadding, 2));
+        } @else {
+            width: 100%;
+        }
+        height: 100%;
+    }
+} @else {
+    // Верстка адаптива вручную по брейк-поинтам
+    .container,
+    [class*="__container"] {
+        margin: 0 auto;
+        @if (vars.$container>0) {
+            max-width: f.rem(vars.$container);
+        }
+    }
+}
+
+// Блокировка прокрутки контента
+.lock {
+    overflow: hidden !important;
+    touch-action: none !important;
+}
