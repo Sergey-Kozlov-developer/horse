@@ -2,9 +2,58 @@
 
 // .container {
 // }
+
+.wrapper__img {
+    // position: relative;
+}
+.img__bg {
+    position: absolute;
+    // width: 100%;
+    height: 948px;
+    top: 0;
+    z-index: -61;
+}
+.img__sky {
+    position: absolute;
+    // width: 100%;
+    height: 200px;
+    top: 660px;
+    bottom: 0;
+    z-index: 62;
+}
+.img__horse {
+    position: absolute;
+    right: 280px;
+    top: 190px;
+    // bottom: 0;
+    width: 556px;
+    z-index: 59;
+}
+.img__gull {
+    position: absolute;
+    width: 272px;
+    right: 100px;
+    top: 180px;
+}
+.img__left {
+    width: 211px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 63;
+}
+.img__right {
+    width: 167px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 63;
+}
+
 .home {
     position: relative;
-    margin-top: 88px;
+    padding-top: 88px;
+    // margin-top: 88px;
     // display: flex;
     // align-items: center;
     // justify-content: space-between;
@@ -50,19 +99,3 @@
     letter-spacing: 1.05px;
     text-transform: uppercase;
 }
-// .home__image {
-//     position: absolute;
-//     right: 0;
-//     bottom: 0;
-//     z-index: -58;
-// }
-// .horse {
-//     position: absolute;
-//     // right: 0;
-//     // bottom: 0;
-//     width: 576px;
-// }
-// .gull {
-//     position: absolute;
-//     width: 272px;
-// }
