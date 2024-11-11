@@ -1,0 +1,49 @@
+.about__block {
+    margin-top: 500px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about__img {
+    width: 870px;
+    height: 576px;
+    margin-left: -200px; // ?
+}
+.about__text {
+}
+.text__data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-bottom: 41px;
+}
+.text__column {
+    width: 200px;
+}
+.text__green {
+    color: #008139;
+    font-family: Philosopher;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    // line-height: 160%; /* 67.2px */
+}
+.text__strong {
+    color: #0b0b0b;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    // line-height: 25px; /* 147.059% */
+}
+.data__description {
+    color: #7e7e7e;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 186.667% */
+}

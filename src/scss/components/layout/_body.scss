@@ -53,3 +53,20 @@ html {
     overflow: hidden !important;
     touch-action: none !important;
 }
+
+// прочие общие стили
+
+/*  стили заголовка  */
+.title__h1 {
+    color: #363434;
+    text-align: center;
+
+    margin-bottom: 70px;
+
+    /* h2 */
+    font-family: Philosopher;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 90% */
+}
