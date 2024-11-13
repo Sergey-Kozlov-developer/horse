@@ -1,4 +1,4 @@
-const aboutService = document.querySelector(".about__service");
+const aboutService = document.querySelector(".about__advantages");
 
 const listService = [
     {
@@ -30,14 +30,14 @@ const listService = [
 function aboutServiceCard() {
     listService.forEach((item) => {
         const html = `
-		<div class="service">
+		<div class="advantages">
                     <img
-                        class="service__img"
+                        class="advantages__img"
                         src="${item.img}"
                         alt=""
                     />
-                    <h2 class="service__title">${item.title}</h2>
-                    <p class="service__description">${item.description}</p>
+                    <h2 class="advantages__title">${item.title}</h2>
+                    <p class="advantages__description">${item.description}</p>
                 </div>
 		`;
         aboutService.insertAdjacentHTML("beforeend", html);

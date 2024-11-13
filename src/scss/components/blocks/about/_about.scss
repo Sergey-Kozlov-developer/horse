@@ -54,23 +54,23 @@
 }
 .title__h1 {
 }
-.about__service {
+.about__advantages {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
-.service {
+.advantages {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
     align-items: center;
 }
-.service__img {
+.advantages__img {
     align-items: center;
 }
-.service__title {
+.advantages__title {
     color: #0b0b0b;
     text-align: center;
 
@@ -81,7 +81,7 @@
     font-weight: 500;
     line-height: normal;
 }
-.service__description {
+.advantages__description {
     width: 271px;
     color: #7e7e7e;
     text-align: center;
