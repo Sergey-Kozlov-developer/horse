@@ -1,6 +1,7 @@
 @use "../../../tools/mixins/index" as mix;
 
 .menu {
+    padding-top: 20px;
     &__body {
         height: 100%;
         @include mix.flex(space-between, center);
@@ -25,12 +26,26 @@
     }
 }
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding-top: 20px;
+    padding-bottom: 20px;
+    @include mix.flex(space-evenly, center);
+    position: fixed; /* Сделать навигацию фиксированной */
+    top: 0; /* Привязать к верхней части страницы */
+    left: 0; /* Привязать к левому краю */
+    width: 100%; /* Занимает полную ширину */
+    z-index: 1000; /* Обеспечить отображение поверх других элементов */
+    // background-color: transparent; /* Цвет фона навигации */
+    background: url("../../../../images/pixels/background.png"); /* Цвет фона навигации */
+    opacity: 0.9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Немного тени для эффекта подъема */
 }
 
 .nav__logo {
+    padding-left: 68px;
 }
 .nav__phone {
+    padding-top: 20px;
 }
