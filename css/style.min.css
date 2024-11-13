@@ -145,6 +145,31 @@ h6 {
   line-height: 36px; /* 90% */
 }
 
+.card__title {
+  color: #363434;
+  text-align: center;
+  font-family: Philosopher;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card__text {
+  width: 280px;
+  color: #7e7e7e;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 140% */
+  padding-bottom: 40px;
+}
+
+.menu {
+  padding-top: 20px;
+}
 .menu__body {
   height: 100%;
   display: -webkit-box;
@@ -178,15 +203,33 @@ h6 {
 }
 
 .nav {
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed; /* Сделать навигацию фиксированной */
+  top: 0; /* Привязать к верхней части страницы */
+  left: 0; /* Привязать к левому краю */
+  width: 100%; /* Занимает полную ширину */
+  z-index: 1000; /* Обеспечить отображение поверх других элементов */
+  background: url("../images/background.png"); /* Цвет фона навигации */
+  opacity: 0.9;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Немного тени для эффекта подъема */
+}
+
+.nav__logo {
+  padding-left: 68px;
+}
+
+.nav__phone {
+  padding-top: 20px;
 }
 
 .header {
@@ -364,10 +407,10 @@ h6 {
 
 .about__two {
   margin-top: 185px;
-  margin-bottom: 60px;
+  margin-bottom: 200px;
 }
 
-.about__service {
+.about__advantages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,7 +423,7 @@ h6 {
   gap: 30px;
 }
 
-.service {
+.advantages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,13 +440,13 @@ h6 {
           align-items: center;
 }
 
-.service__img {
+.advantages__img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.service__title {
+.advantages__title {
   color: #0b0b0b;
   text-align: center;
   /* h3 */
@@ -414,7 +457,7 @@ h6 {
   line-height: normal;
 }
 
-.service__description {
+.advantages__description {
   width: 271px;
   color: #7e7e7e;
   text-align: center;
@@ -422,6 +465,109 @@ h6 {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
+}
+
+.img__service {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 1920px;
+  height: 1312px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.visible {
+  z-index: 1;
+}
+
+.service {
+  z-index: 1;
+}
+
+.service__card {
+  margin-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  width: 370px;
+  height: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  -webkit-box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.07);
+}
+
+.card__img {
+  margin-top: -30px;
+}
+
+.divider::after {
+  width: 20px;
+  content: "";
+  display: block;
+  border: 1px solid #008139;
+  border-radius: 0.5px;
+}
+
+.card__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+}
+
+.card__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+}
+
+.card__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
 }
 
 .main {
