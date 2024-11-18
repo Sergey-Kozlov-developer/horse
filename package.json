@@ -69,6 +69,7 @@
    "dependencies": {
       "avif-webp-checker": "^1.0.0",
       "prettier": "^3.3.3",
-      "site-color-schemes": "^1.0.2"
+      "site-color-schemes": "^1.0.2",
+      "ymaps": "^0.2.1"
    }
 }

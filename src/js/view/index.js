@@ -7,3 +7,6 @@ serviceCardFn();
 
 import aboutHorseFn from "./components/aboutHorse/aboutHorse";
 aboutHorseFn();
+
+import initMap from "./components/yamap/yamap";
+initMap();
