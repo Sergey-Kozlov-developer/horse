@@ -21,10 +21,15 @@
 
 // ? Подключение стилей service
 @forward "blocks/service/service";
+
 // ? Подключение стилей swiper/users
 @forward "blocks/swiper/users";
-// ? Подключение стилей swiper/aboutHorse
+
+// ? Подключение стилей aboutHorse
 @forward "blocks/aboutHorse/about-horse";
+
+// ? Подключение стилей contact
+@forward "blocks/contact/contact";
 
 // ? Подключение стилей main
 @forward "blocks/wrapper/main";
