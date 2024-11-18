@@ -4,3 +4,6 @@ aboutServiceCard();
 
 import serviceCardFn from "./components/service/service";
 serviceCardFn();
+
+import aboutHorseFn from "./components/aboutHorse/aboutHorse";
+aboutHorseFn();
