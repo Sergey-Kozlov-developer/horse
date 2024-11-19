@@ -28,6 +28,11 @@
     // bottom: 0;
     width: 556px;
     z-index: 59;
+    @include smalltablet {
+        width: 360px;
+        left: 10px;
+        top: 390px;
+    }
 }
 .img__gull {
     position: absolute;
@@ -70,6 +75,15 @@
     line-height: 107%; /* 60.99px */
 
     @include fontface("Philosopher", "Philosopher-Bold", 700, normal);
+    @include smalltablet {
+        width: 360px;
+        font-size: 32px;
+        line-height: 1.2;
+        overflow-wrap: break-word;
+        padding: 10px;
+        text-align: center;
+        // @include mix.flex(space-around, center);
+    }
 }
 .home__description {
     width: 590px;
@@ -81,6 +95,16 @@
     font-weight: 400;
     line-height: 140%; /* 33.6px */
     @include fontface("Philosopher", "Philosopher-Regular", 400, normal);
+    @include smalltablet {
+        width: 360px;
+        // font-size: 32px;
+        line-height: 1.2;
+        overflow-wrap: break-word;
+        // padding: 10px;
+        text-align: center;
+        align-content: center;
+        // @include mix.flex(space-around, center);
+    }
 }
 .btn__home {
     margin-top: 40px;
@@ -98,4 +122,10 @@
     line-height: 32px; /* 213.333% */
     letter-spacing: 1.05px;
     text-transform: uppercase;
+    @include mobile {
+        display: none;
+        // margin-top: 400px;
+
+        // @include mix.flex(space-around, center);
+    }
 }

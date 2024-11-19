@@ -13,3 +13,4 @@ import * as $components from "./view";
 $plugins.colorSchemes.auto();
 $plugins.mobileCheck();
 $plugins.isAvifWebp({ mode: "webp" });
+$plugins.menu();

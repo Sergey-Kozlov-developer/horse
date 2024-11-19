@@ -1,11 +1,22 @@
+@use "../../../tools/mixins/index" as *;
+
 .horse {
     margin-bottom: 100px;
+    @include smalltablet {
+        margin-bottom: 0;
+    }
 }
 .about__horse {
+    margin-bottom: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    @include smalltablet {
+        margin-bottom: 50px;
+        flex-direction: column;
+        gap: 60px;
+    }
 }
 
 .horse__img {

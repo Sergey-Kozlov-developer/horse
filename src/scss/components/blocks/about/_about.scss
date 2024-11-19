@@ -1,3 +1,5 @@
+@use "../../../tools/mixins/index" as *;
+
 .about__block {
     margin-top: 500px;
 }
@@ -6,22 +8,49 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include smalltablet {
+        flex-direction: column;
+        // font-size: 32px;
+    }
 }
 .about__img {
     width: 870px;
     height: 576px;
     margin-left: -200px; // ?
+    @include smalltablet {
+        width: 660px;
+        margin-left: 0;
+    }
 }
 .about__text {
+    @include smalltablet {
+        // width: 560px;
+        padding: 10px;
+    }
 }
 .text__data {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     padding-bottom: 41px;
+    @include smalltablet {
+        // width: 560px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
 }
 .text__column {
     width: 200px;
+    @include smalltablet {
+        // width: 560px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
 }
 .text__green {
     color: #008139;
@@ -38,6 +67,10 @@
     font-style: normal;
     font-weight: 500;
     // line-height: 25px; /* 147.059% */
+    @include smalltablet {
+        // width: 560px;
+        text-align: center;
+    }
 }
 .data__description {
     color: #7e7e7e;
@@ -59,6 +92,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    @include smalltablet {
+        flex-direction: column;
+    }
 }
 .advantages {
     display: flex;

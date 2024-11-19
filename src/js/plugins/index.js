@@ -8,4 +8,4 @@ export { default as isAvifWebp } from "avif-webp-checker";
 export { mobileCheck } from "./scripts/mobileCheck.js";
 
 // * Подключение простого меню с бургером
-// export { menu } from "./scripts/menu.js";
+export { menu } from "./scripts/menu.js";

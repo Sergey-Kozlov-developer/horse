@@ -41,6 +41,9 @@
     background: url("../../../../images/pixels/background.png"); /* Цвет фона навигации */
     opacity: 0.9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Немного тени для эффекта подъема */
+    @include mix.smalltablet {
+        @include mix.flex(space-around, center);
+    }
 }
 
 .nav__logo {
@@ -48,4 +51,8 @@
 }
 .nav__phone {
     padding-top: 20px;
+
+    @include mix.mobile {
+        display: none;
+    }
 }
