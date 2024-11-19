@@ -272,16 +272,16 @@ h6 {
 
 .img__horse {
   position: absolute;
-  right: 280px;
-  top: 190px;
-  width: 556px;
+  right: 0;
+  top: 260px;
+  width: 956px;
   z-index: 59;
 }
 @media (max-width: 768.5px) {
   .img__horse {
-    width: 360px;
+    width: 560px;
     left: 10px;
-    top: 390px;
+    top: 490px;
   }
 }
 
