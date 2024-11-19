@@ -23,10 +23,10 @@
 }
 .img__horse {
     position: absolute;
-    right: 280px;
-    top: 190px;
+    right: 0;
+    top: 260px;
     // bottom: 0;
-    width: 556px;
+    width: 956px;
     z-index: 59;
     @include smalltablet {
         width: 360px;
